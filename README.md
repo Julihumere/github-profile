@@ -1,40 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Github Profile
 
-## Getting Started
+Una aplicación web construida con **React**, **Vite**, y **TailwindCSS** que permite buscar perfiles de Github. La aplicación muestra información detallada sobre el perfil de un usuario, incluyendo sus seguidores, seguidos, ubicación y repositorios. Además, cuenta con un buscador para filtrar los repositorios por los más recientes y los más votados.
 
-First, run the development server:
+## Características
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Búsqueda de Perfil**: Permite buscar cualquier perfil de Github por nombre de usuario.
+- **Detalles del Perfil**: Muestra información relevante, como los seguidores, seguidos y la ubicación del usuario.
+- **Repositorios**: Lista los repositorios del usuario con opción de filtrado.
+- **Filtrado de Repositorios**: Puedes filtrar los repositorios entre los más recientes y los más votados.
+- **Diseño Responsivo**: Usando **TailwindCSS** para asegurar que la aplicación sea completamente responsiva y funcional en diferentes tamaños de pantalla.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tecnologías Usadas
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- **React**: Librería de JavaScript para construir interfaces de usuario.
+- **Vite**: Herramienta de construcción rápida para el desarrollo de aplicaciones web modernas.
+- **TailwindCSS**: Framework de CSS para diseño responsivo y utilitario.
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Instalación
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+Para correr el proyecto en tu máquina local, sigue estos pasos:
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/tu-usuario/github-profile.git
+   ```
+2. Navega al directorio del proyecto:
+   ```bash
+   cd github-profile
+   ```
+3. Instala las dependencias:
+   ```bash
+   npm install
+   ```
+4. Corre la aplicación en modo de desarrollo:
+   ```bash
+   npm run dev
+   ```
+5. Abre tu navegador y ve a http://localhost:5173 para ver la aplicación en acción.
 
-## Learn More
+## Uso
 
-To learn more about Next.js, take a look at the following resources:
+1. Ingresa el nombre de usuario de Github en el campo de búsqueda.
+2. La aplicación mostrará la información del perfil, incluyendo los seguidores, seguidos y la ubicación.
+3. Puedes ver los repositorios del usuario y filtrarlos por:
+   - **Más recientes**
+   - **Más votados**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+## Contribuciones
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Si deseas contribuir al proyecto, haz un fork del repositorio, realiza tus cambios y luego crea un pull request. ¡Apreciamos cualquier contribución!
 
-## Deploy on Vercel
+## Licencia
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+---
+
+¡Gracias por usar Github Profile!

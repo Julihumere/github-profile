@@ -7,9 +7,14 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        beVietnamPro: ["Be Vietnam Pro", "sans-serif"],
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        background: "#20293a",
+        backgroundItems: "#111729",
+        placeholder: "#4a5567",
+        textWhite: "#CDD5E0",
       },
     },
   },

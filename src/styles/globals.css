@@ -1,21 +1,73 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body {
+  background-color: #20293a;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.gradient-hover {
+  position: relative;
+
+  overflow: hidden;
+}
+
+.gradient-hover::before,
+.gradient-hover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, #111729, #1d1b48);
+  transition: opacity 0.5s ease-in-out;
+  z-index: 0;
+}
+
+.gradient-hover::after {
+  background: linear-gradient(
+    to left,
+    #111729,
+    #1d1b48
+  ); /* Gradiente invertido */
+  opacity: 0; /* Inicialmente invisible */
+}
+
+.gradient-hover:hover::after {
+  opacity: 1; /* Hace visible el gradiente invertido */
+}
+
+.gradient-hover > * {
+  position: relative; /* Asegura que el contenido esté por encima */
+  z-index: 1;
+}
+
+/* Animación para mostrar (entrada desde arriba) */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+/* Animación para ocultar (salida hacia arriba) */
+@keyframes slideUp {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+}
+
+/* Clases de animación */
+.slide-down {
+  animation: slideDown 0.3s ease forwards;
+}
+
+.slide-up {
+  animation: slideUp 0.3s ease forwards;
 }
