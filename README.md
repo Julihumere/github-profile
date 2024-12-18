@@ -1,6 +1,6 @@
 # Github Profile
 
-Una aplicación web construida con **React**, **Vite**, y **TailwindCSS** que permite buscar perfiles de Github. La aplicación muestra información detallada sobre el perfil de un usuario, incluyendo sus seguidores, seguidos, ubicación y repositorios. Además, cuenta con un buscador para filtrar los repositorios por los más recientes y los más votados.
+Una aplicación web construida con **React**, **Next**, y **TailwindCSS** que permite buscar perfiles de Github. La aplicación muestra información detallada sobre el perfil de un usuario, incluyendo sus seguidores, seguidos, ubicación y repositorios. Además, cuenta con un buscador para filtrar los repositorios por los más recientes y los más votados.
 
 ## Características
 
@@ -13,7 +13,7 @@ Una aplicación web construida con **React**, **Vite**, y **TailwindCSS** que pe
 ## Tecnologías Usadas
 
 - **React**: Librería de JavaScript para construir interfaces de usuario.
-- **Vite**: Herramienta de construcción rápida para el desarrollo de aplicaciones web modernas.
+- **Next**: Herramienta de construcción rápida para el desarrollo de aplicaciones web modernas.
 - **TailwindCSS**: Framework de CSS para diseño responsivo y utilitario.
 
 ## Instalación
@@ -36,7 +36,7 @@ Para correr el proyecto en tu máquina local, sigue estos pasos:
    ```bash
    npm run dev
    ```
-5. Abre tu navegador y ve a http://localhost:5173 para ver la aplicación en acción.
+5. Abre tu navegador y ve a http://localhost:3000 para ver la aplicación en acción.
 
 ## Uso
 
