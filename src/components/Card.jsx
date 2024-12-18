@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 import { formatDistanceToNow } from "date-fns";
-import "../styles/globals.css";
 export default function Card(props) {
   const { repo } = props;
 
